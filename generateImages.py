@@ -5,7 +5,7 @@ from PIL import Image
 import shutil
 
 classes = {'Bicycle':2269-1471, 'Bridge':2022-1471, 'Bus':2698-1471, 'Car':5047-1471, 
-'Cross':2729-1471, 'Hydrant':2441-1471, 'Palm':2401-1471, 'Traffic Light':2280-1471}
+'Cross':2729-1471, 'Hydrant':2441-1471, 'Palm':2401-1471, 'Tlight':2280-1471}
 
 def generate():
     filepath = "images/current/"
