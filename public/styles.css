@@ -1,0 +1,139 @@
+@font-face {
+    font-family: idea1;
+    src: url(static-images/ka1.ttf);
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    font-family: idea1;
+}
+
+.description{
+    height: 100px;
+    width: 800px;
+    font-family: idea1;
+    letter-spacing: .2rem;
+    word-spacing: 2px;
+    
+}
+
+.description-color{
+    background: -webkit-linear-gradient(rgb(0, 247, 255), rgb(0, 247, 255), rgb(0, 66, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-font{
+    font-family: idea1;
+}
+
+.tile{
+    background-color: white;
+    height: 127px;
+    width: 127px;
+    align-items: center;
+    border-style: solid;
+    border-color: grey;
+    border-width: 7px;
+}
+
+body {
+    font-family: idea1;
+    margin: 0;
+    background-image: url("./static-images/hackathon-background.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+    /*color: rgb(70,252,255);*/
+    letter-spacing: .7rem;
+    font-size: 6rem;
+    font-family: idea1;
+
+    background: -webkit-linear-gradient(rgb(0, 247, 255), rgb(0, 247, 255), rgb(0, 66, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+} 
+
+.game-title{
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+    /*color: rgb(70,252,255);*/
+    letter-spacing: .7rem;
+    font-size: 4rem;
+    font-family: idea1;
+
+    background: -webkit-linear-gradient(rgb(0, 247, 255), rgb(0, 247, 255), rgb(0, 66, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.small-font {
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+    /*color: rgb(70,252,255);*/
+    letter-spacing: .7rem;
+    font-size: 2rem;
+    font-family: idea1;
+
+    background: -webkit-linear-gradient(rgb(0, 247, 255), rgb(0, 247, 255), rgb(0, 66, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fade-in-text-fast{
+    animation: fadeIn 2s;
+}
+
+.fade-in-text-slow{
+
+    animation: fadeIn 10s;
+}
+
+.button {
+    background: linear-gradient(rgb(0, 247, 255), rgb(9, 69, 234)); 
+    font-family: idea1;
+    
+}
+
+.wiggle-button{
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
