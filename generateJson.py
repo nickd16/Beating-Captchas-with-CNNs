@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 import random
 import json
 from generateImages import generate
+import sys
+import json
+import ast
 
 def create_json():
     height = 120
@@ -49,10 +52,11 @@ def create_json():
     stuff = model.evaluate(dataset, batch_size=batch_size, callbacks=[CustomCallback()])
 
     js = {
+        "category":category,
         "true_labels":true_labels,
         "predicted_labels":predicted_labels
     }
-
     return js
+
 
 
