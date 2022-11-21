@@ -51,6 +51,10 @@ def create_json():
     model = keras.models.load_model(f'models/{category}_model/')
     stuff = model.evaluate(dataset, batch_size=batch_size, callbacks=[CustomCallback()])
 
+    for i in range (9):
+        if predicted_labels[i] == -1:
+            true_labels[i] = 0 if true_labels[i] == 1 else 1 # AI guessed incorrectly, so we switch the label score from 0 to 1 or 1 to 0
+    
     js = {
         "category":category,
         "true_labels":true_labels,
